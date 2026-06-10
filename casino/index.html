@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mostbet Casino Россия | Онлайн-игры, слоты и лайв-казино</title>
+<meta content="Обновлённое руководство по Mostbet Casino в России со слотами, лайв-играми, краш-играми, фриспинами, бонусами, приложением и критериями безопасности." name="description"/>
+<meta content="mostbet casino, mostbet casino онлайн, casino mostbet, онлайн казино mostbet, mostbet casino россия, mostbet ru casino, mostbet casino бонус" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<style>
+:root{
+  --bg-1:#0d1117;--bg-2:#121820;--bg-3:#1a1f2e;
+  --card:#1e2438;--border:#2a3050;
+  --text:#e8eaf0;--text-mute:#7a86a0;
+  --gold:#f0c040;--orange:#ff6b35;
+  --r:12px;--w:1200px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg-1);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6}
+a{color:var(--gold);text-decoration:none}a:hover{color:#fff}
+.container{max-width:var(--w);margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:11px 24px;border-radius:8px;font-weight:600;font-size:15px;cursor:pointer;transition:all .2s;border:none}
+.btn-primary{background:var(--gold);color:#000}.btn-primary:hover{background:#ffd050}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.topbar{background:var(--bg-3);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--w);margin:0 auto;padding:0 24px;height:76px;gap:16px}
+.logo{display:flex;align-items:center}
+.top-actions{display:flex;align-items:center;gap:12px}
+.lang{font-size:13px;color:var(--text-mute);white-space:nowrap}
+.mainnav{background:var(--bg-2);border-bottom:1px solid var(--border)}
+.mainnav-inner{max-width:var(--w);margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.mainnav-inner::-webkit-scrollbar{display:none}
+.mainnav a{display:inline-block;padding:12px 15px;font-size:14px;color:var(--text-mute);white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
+.mainnav a:hover,.mainnav a.active{color:var(--gold)}.mainnav a.active{border-bottom-color:var(--gold)}
+.breadcrumbs{display:flex;align-items:center;gap:8px;padding:12px 0;font-size:13px;color:var(--text-mute)}
+.breadcrumbs a{color:var(--text-mute)}.sep{color:var(--border)}
+section{padding:56px 0}
+.hero{padding:64px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(26px,3.5vw,42px);line-height:1.2;margin-bottom:20px}
+.lead{font-size:17px;color:var(--text-mute);margin-bottom:28px;line-height:1.7}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img,.app-img,.split-img{border-radius:var(--r);overflow:hidden}
+.hero-img svg,.app-img svg,.split-img svg{width:100%;height:auto;display:block;border-radius:var(--r)}
+.section-head{text-align:center;margin-bottom:40px}
+.section-head h2{font-size:clamp(20px,2.8vw,32px);margin-bottom:12px}
+.section-head p{color:var(--text-mute);max-width:600px;margin:0 auto;font-size:15px}
+section h2{font-size:clamp(18px,2.5vw,28px);margin-bottom:14px}
+.prose{padding:8px 0}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th{background:var(--bg-3);color:var(--gold);font-size:13px;text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}
+td{padding:12px 16px;border-bottom:1px solid var(--border);font-size:14px;color:var(--text-mute)}
+tr:last-child td{border-bottom:none}td:first-child{color:var(--text);font-weight:500}
+.app{background:var(--bg-2)}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.app-cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.features{list-style:none;margin:18px 0;display:flex;flex-direction:column;gap:10px}
+.features li{padding-left:24px;position:relative;color:var(--text-mute);font-size:15px}
+.features li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.prose-with-image .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.reverse{direction:rtl}.reverse>*{direction:ltr}
+.split-text{display:flex;flex-direction:column;gap:14px}
+.split-text p{color:var(--text-mute);line-height:1.7;font-size:15px}
+.bonos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.bono-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:8px}
+.bono-card h3{font-size:17px}.bono-card p{color:var(--text-mute);font-size:14px;line-height:1.6}
+.badge{display:inline-block;background:var(--gold);color:#000;font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;letter-spacing:.5px;width:fit-content}
+.productos{background:var(--bg-2)}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
+.prod-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;color:var(--text);transition:all .2s}
+.prod-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.prod-card .icon{font-size:26px}.prod-card .title{font-size:13px;font-weight:500}
+.faq{background:var(--bg-2)}
+.faq-list{display:flex;flex-direction:column;gap:10px;max-width:780px;margin:0 auto}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.faq-item summary{padding:16px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:18px;color:var(--gold);margin-left:12px;flex-shrink:0}
+.faq-item[open] summary::after{content:"−"}
+.faq-item p{padding:0 22px 16px;color:var(--text-mute);font-size:14px;line-height:1.7}
+footer{background:var(--bg-3);border-top:1px solid var(--border);padding:48px 0 24px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;margin-bottom:32px}
+.foot-logo{margin-bottom:14px}
+.foot-h{font-size:12px;font-weight:700;color:var(--text-mute);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+footer ul li a{font-size:14px;color:var(--text-mute)}footer ul li a:hover{color:var(--gold)}
+.foot-disclaimer{font-size:12px;color:var(--text-mute);margin-top:8px;line-height:1.5}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:22px;border-top:1px solid var(--border);font-size:13px;color:var(--text-mute)}
+@media(max-width:768px){
+  .hero-grid,.app-grid{grid-template-columns:1fr}.hero-img{order:-1}
+  .prose-with-image .split{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}.lang{display:none}}
+@media(max-width:480px){.foot-grid{grid-template-columns:1fr}section{padding:36px 0}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<div class="topbar-inner">
+<a class="logo" href="../">
+<svg viewBox="0 0 250 56" style="height:44px;width:auto" xmlns="http://www.w3.org/2000/svg">
+<rect width="250" height="56" rx="8" fill="#1e2438"/>
+<text x="14" y="38" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900"><tspan fill="#f0c040">MOST</tspan><tspan fill="#e8eaf0">BET</tspan></text>
+<text x="14" y="52" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0" letter-spacing="3">РОССИЯ</text>
+</svg>
+</a>
+<div class="top-actions">
+<span class="lang">&#127479;&#127482; Россия · Русский</span>
+<a class="btn btn-ghost" href="../play-online-now/">Войти</a>
+<a class="btn btn-primary" data-nosnippet="" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Открыть Mostbet</a>
+</div>
+</div>
+<nav class="mainnav"><div class="mainnav-inner"><a class="active" href="../casino/">🎰 Казино</a><a class="" href="../slots/">🎲 Слоты</a><a class="" href="../live-casino/">♠ Лайв</a><a class="" href="../sports-betting/">⚽ Спорт</a><a class="" href="../aviator/">✈ Авиатор</a><a class="" href="../promotions/">🎁 Акции</a><a class="" href="../promo-code/">🏷 Коды</a><a class="" href="../app/">📱 Приложение</a><a class="" href="../vip/">👑 VIP</a></div></nav>
+</header>
+<main>
+<div class="container breadcrumbs"><a href="../">Главная</a><span class="sep">›</span><span>Mostbet Казино</span></div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<h1>Mostbet Casino онлайн в России: лобби, игры и бонусы без путаницы</h1>
+<p class="lead">Страница посвящена Mostbet Casino для изучения слотов, лайв-казино, краш-игр, фриспинов и условий перед реальными ставками из России.</p>
+<div class="hero-cta">
+<a class="btn btn-primary" data-nosnippet="" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Перейти в Mostbet</a>
+<a class="btn btn-ghost" href="../live-casino/">Лайв-казино</a>
+</div>
+</div>
+<div class="hero-img">
+<!-- IMAGE 1: casino-online.webp — Casino Lobby -->
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="clbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a0810"/><stop offset="100%" stop-color="#13101e"/></linearGradient>
+<radialGradient id="clg1" cx="50%" cy="40%" r="55%"><stop offset="0%" stop-color="#8b1a1a" stop-opacity="0.12"/><stop offset="100%" stop-color="#8b1a1a" stop-opacity="0"/></radialGradient>
+<radialGradient id="clg2" cx="50%" cy="40%" r="45%"><stop offset="0%" stop-color="#f0c040" stop-opacity="0.06"/><stop offset="100%" stop-color="#f0c040" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#clbg)"/>
+<rect width="1200" height="675" fill="url(#clg1)"/>
+<rect width="1200" height="675" fill="url(#clg2)"/>
+<!-- Casino header bar -->
+<rect x="0" y="0" width="1200" height="52" fill="#090610" opacity="0.98"/>
+<text x="22" y="34" font-family="Arial Black,sans-serif" font-size="20" font-weight="900"><tspan fill="#f0c040">MOST</tspan><tspan fill="#ffffff">BET</tspan></text>
+<text x="22" y="46" font-family="Arial,sans-serif" font-size="9" fill="#7a86a0" letter-spacing="3">CASINO</text>
+<rect x="900" y="10" width="140" height="32" rx="8" fill="#1e2438"/>
+<text x="916" y="22" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0">Баланс</text>
+<text x="916" y="36" font-family="Arial Black,sans-serif" font-size="14" fill="#ffffff">&#8381; 5 000</text>
+<rect x="1050" y="10" width="130" height="32" rx="8" fill="#f0c040"/>
+<text x="1115" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#000" font-weight="700">Пополнить</text>
+<!-- Category nav -->
+<rect x="0" y="52" width="1200" height="44" fill="#0e0b18"/>
+<line x1="0" y1="96" x2="1200" y2="96" stroke="#1a1428" stroke-width="1"/>
+<rect x="20" y="60" width="80" height="26" rx="13" fill="#f0c040"/>
+<text x="60" y="77" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#000" font-weight="700">Все игры</text>
+<rect x="110" y="60" width="64" height="26" rx="13" fill="#1e2438"/>
+<text x="142" y="77" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Слоты</text>
+<rect x="184" y="60" width="64" height="26" rx="13" fill="#1e2438"/>
+<text x="216" y="77" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Лайв</text>
+<rect x="258" y="60" width="70" height="26" rx="13" fill="#1e2438"/>
+<text x="293" y="77" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Краш</text>
+<rect x="338" y="60" width="82" height="26" rx="13" fill="#1e2438"/>
+<text x="379" y="77" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Популярные</text>
+<rect x="430" y="60" width="70" height="26" rx="13" fill="#1e2438"/>
+<text x="465" y="77" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Новинки</text>
+<rect x="1020" y="60" width="160" height="26" rx="13" fill="#1e2438"/>
+<text x="1038" y="77" font-family="Arial,sans-serif" font-size="13" fill="#3a4060">🔍 Поиск игры...</text>
+<!-- Game tiles row 1 -->
+<rect x="20" y="108" width="230" height="160" rx="12" fill="#1a0828"/>
+<rect x="20" y="108" width="230" height="90" rx="12" fill="#2a0a40"/>
+<text x="135" y="164" text-anchor="middle" font-size="52">🍭</text>
+<rect x="20" y="108" width="60" height="24" rx="8" fill="#f0c040"/>
+<text x="50" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#000" font-weight="700">HOT</text>
+<text x="135" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Sweet Bonanza</text>
+<text x="135" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">RTP 96.5%</text>
+<text x="135" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#f0c040">Pragmatic Play</text>
+<rect x="265" y="108" width="230" height="160" rx="12" fill="#080a28"/>
+<rect x="265" y="108" width="230" height="90" rx="12" fill="#101840"/>
+<text x="380" y="164" text-anchor="middle" font-size="52">⚡</text>
+<rect x="265" y="108" width="72" height="24" rx="8" fill="#4060ff"/>
+<text x="301" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="700">TOP</text>
+<text x="380" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Gates of Olympus</text>
+<text x="380" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">RTP 96.5%</text>
+<text x="380" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#f0c040">Pragmatic Play</text>
+<rect x="510" y="108" width="230" height="160" rx="12" fill="#080e18"/>
+<rect x="510" y="108" width="230" height="90" rx="12" fill="#0c1428"/>
+<text x="625" y="164" text-anchor="middle" font-size="52">✈</text>
+<rect x="510" y="108" width="80" height="24" rx="8" fill="#27ae60"/>
+<text x="550" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="700">КРАШ</text>
+<text x="625" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Aviator</text>
+<text x="625" y="236" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Spribe</text>
+<text x="625" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#00c8ff">x2.45 текущий</text>
+<!-- Game tiles row 2 -->
+<rect x="20" y="282" width="230" height="160" rx="12" fill="#201000"/>
+<rect x="20" y="282" width="230" height="90" rx="12" fill="#301800"/>
+<text x="135" y="338" text-anchor="middle" font-size="52">📖</text>
+<text x="135" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Book of Ra</text>
+<text x="135" y="410" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">RTP 95.0%</text>
+<text x="135" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#f0c040">Novomatic</text>
+<rect x="265" y="282" width="230" height="160" rx="12" fill="#001420"/>
+<rect x="265" y="282" width="230" height="90" rx="12" fill="#001e30"/>
+<text x="380" y="338" text-anchor="middle" font-size="52">🐟</text>
+<rect x="265" y="282" width="72" height="24" rx="8" fill="#ff6020"/>
+<text x="301" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#fff" font-weight="700">NEW</text>
+<text x="380" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Big Bass Bonanza</text>
+<text x="380" y="410" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">RTP 96.7%</text>
+<text x="380" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#f0c040">Pragmatic Play</text>
+<rect x="510" y="282" width="230" height="160" rx="12" fill="#200a00"/>
+<rect x="510" y="282" width="230" height="90" rx="12" fill="#301000"/>
+<text x="625" y="338" text-anchor="middle" font-size="52">🐯</text>
+<text x="625" y="392" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Fortune Tiger</text>
+<text x="625" y="410" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">RTP 96.8%</text>
+<text x="625" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#f0c040">PG Soft</text>
+<!-- Right panel -->
+<rect x="760" y="96" width="420" height="486" fill="#0a0810" opacity="0.9"/>
+<line x1="760" y1="96" x2="760" y2="582" stroke="#1a1428" stroke-width="1"/>
+<text x="780" y="130" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0" letter-spacing="2">КАЗИНО MOSTBET RU</text>
+<rect x="776" y="144" width="386" height="88" rx="14" fill="#1e1400" stroke="#f0c040" stroke-width="1" stroke-opacity="0.4"/>
+<text x="969" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Джекпот дня</text>
+<text x="969" y="210" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="34" fill="#f0c040" font-weight="900">&#8381; 8 400 000</text>
+<rect x="776" y="248" width="118" height="72" rx="10" fill="#1e2438"/>
+<text x="835" y="272" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="22" fill="#f0c040" font-weight="900">5000+</text>
+<text x="835" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">игр в лобби</text>
+<rect x="904" y="248" width="118" height="72" rx="10" fill="#1e2438"/>
+<text x="963" y="272" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="22" fill="#f0c040" font-weight="900">50+</text>
+<text x="963" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">провайдеров</text>
+<rect x="1032" y="248" width="118" height="72" rx="10" fill="#1e2438"/>
+<text x="1091" y="272" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="22" fill="#f0c040" font-weight="900">24/7</text>
+<text x="1091" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">лайв-столы</text>
+<text x="780" y="350" font-family="Arial,sans-serif" font-size="12" fill="#3a4060" letter-spacing="1">ПРОВАЙДЕРЫ</text>
+<rect x="776" y="360" width="90" height="28" rx="8" fill="#1e2438"/><text x="821" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Pragmatic</text>
+<rect x="876" y="360" width="78" height="28" rx="8" fill="#1e2438"/><text x="915" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">PG Soft</text>
+<rect x="964" y="360" width="72" height="28" rx="8" fill="#1e2438"/><text x="1000" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Spribe</text>
+<rect x="1046" y="360" width="72" height="28" rx="8" fill="#1e2438"/><text x="1082" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">NetEnt</text>
+<rect x="776" y="398" width="80" height="28" rx="8" fill="#1e2438"/><text x="816" y="416" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Evolution</text>
+<rect x="866" y="398" width="84" height="28" rx="8" fill="#1e2438"/><text x="908" y="416" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Novomatic</text>
+<rect x="960" y="398" width="72" height="28" rx="8" fill="#1e2438"/><text x="996" y="416" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Yggdrasil</text>
+<rect x="776" y="442" width="386" height="80" rx="14" fill="#201800" stroke="#f0c040" stroke-width="1" stroke-opacity="0.3"/>
+<rect x="776" y="442" width="5" height="80" rx="3" fill="#f0c040"/>
+<text x="796" y="467" font-family="Arial,sans-serif" font-size="13" fill="#f0c040" font-weight="700">Приветственный бонус</text>
+<text x="796" y="490" font-family="Arial Black,sans-serif" font-size="24" fill="#ffffff">до &#8381; 50 000 + 250 ФС</text>
+<text x="796" y="510" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Только для новых игроков</text>
+<text x="776" y="556" font-size="20" fill="#f0c040">&#9733;&#9733;&#9733;&#9733;&#9733;</text>
+<text x="896" y="556" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">4.8 · Топ казино России 2026</text>
+<!-- Live banner -->
+<rect x="20" y="456" width="720" height="120" rx="14" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<rect x="28" y="464" width="5" height="104" rx="3" fill="#f0c040"/>
+<text x="48" y="488" font-family="Arial,sans-serif" font-size="13" fill="#f0c040" font-weight="700">&#127381; Лайв-казино прямо сейчас</text>
+<text x="48" y="510" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Рулетка · Блэкджек · Баккара · Покер с живыми дилерами</text>
+<text x="48" y="532" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Сотни столов · Русскоязычные дилеры · Без ожидания</text>
+<rect x="600" y="476" width="130" height="44" rx="10" fill="#f0c040"/>
+<text x="665" y="503" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#000" font-weight="700">Играть сейчас</text>
+</svg>
+</div>
+</div>
+</div>
+</section>
+
+<!-- APP SECTION -->
+<section class="app"><div class="container app-grid">
+<div>
+<h2>Чеклист перед использованием Mostbet Casino</h2>
+<p style="color:var(--text-mute);font-size:16px">Сначала разберитесь с операционной частью, а затем принимайте решение об аккаунте, бонусе, игровой сессии или приложении.</p>
+<ul class="features">
+<li>Уточните, к какой категории относится игра (слоты, лайв, краш) перед использованием бонуса.</li>
+<li>Изучите лимиты, вклад в вейджер и скорость отыгрыша для каждой категории.</li>
+<li>Разделяйте развлечение и ожидание выигрыша.</li>
+<li>Обращайтесь в поддержку, если какое-либо правило казино непонятно.</li>
+</ul>
+<div class="app-cta">
+<a class="btn btn-primary" href="../support/">Поддержка</a>
+<a class="btn btn-ghost" href="../promotions/">Акции</a>
+</div>
+</div>
+<div class="app-img">
+<!-- IMAGE 2: support-247.webp — Support Chat in phone (portrait) -->
+<svg viewBox="0 0 675 1200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="spbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#08101a"/><stop offset="100%" stop-color="#101820"/></linearGradient>
+<radialGradient id="spgl" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#1a60ff" stop-opacity="0.10"/><stop offset="100%" stop-color="#1a60ff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="675" height="1200" fill="url(#spbg)"/>
+<rect width="675" height="1200" fill="url(#spgl)"/>
+<circle cx="100" cy="220" r="160" fill="none" stroke="#1a60ff" stroke-width="1" opacity="0.06"/>
+<circle cx="580" cy="1000" r="140" fill="none" stroke="#f0c040" stroke-width="1" opacity="0.04"/>
+<rect x="30" y="80" width="140" height="32" rx="16" fill="#1e2438"/>
+<circle cx="52" cy="96" r="8" fill="#27ae60"/>
+<text x="68" y="101" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Онлайн 24/7</text>
+<rect x="182" y="80" width="130" height="32" rx="16" fill="#1e2438"/>
+<circle cx="204" cy="96" r="8" fill="#4060ff"/>
+<text x="220" y="101" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Рус. язык</text>
+<rect x="324" y="80" width="120" height="32" rx="16" fill="#1e2438"/>
+<circle cx="346" cy="96" r="8" fill="#f0c040"/>
+<text x="362" y="101" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Чат / Email</text>
+<ellipse cx="337" cy="1170" rx="140" ry="16" fill="#000" opacity="0.28"/>
+<rect x="112" y="136" width="450" height="992" rx="50" fill="#1c2038" stroke="#3a4060" stroke-width="2.5"/>
+<rect x="130" y="158" width="414" height="950" rx="36" fill="#080e14"/>
+<rect x="247" y="158" width="180" height="38" rx="19" fill="#1c2038"/>
+<circle cx="337" cy="177" r="9" fill="#080e14" stroke="#2a3050" stroke-width="1"/>
+<rect x="560" y="290" width="7" height="72" rx="4" fill="#2a3050"/>
+<rect x="105" y="268" width="7" height="52" rx="4" fill="#2a3050"/>
+<rect x="105" y="332" width="7" height="52" rx="4" fill="#2a3050"/>
+<!-- App header support -->
+<rect x="130" y="196" width="414" height="56" fill="#070a10"/>
+<text x="156" y="232" font-family="Arial,sans-serif" font-size="22">&#8592;</text>
+<text x="220" y="232" font-family="Arial Black,sans-serif" font-size="18" fill="#ffffff">Поддержка</text>
+<circle cx="490" cy="224" r="10" fill="#27ae60"/>
+<circle cx="490" cy="224" r="7" fill="#2ecc71"/>
+<text x="507" y="228" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">В сети</text>
+<!-- Chat area -->
+<rect x="130" y="252" width="414" height="690" fill="#0a0e14"/>
+<text x="337" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#3a4060">Сегодня</text>
+<!-- Agent msg 1 -->
+<rect x="144" y="306" width="280" height="72" rx="14" fill="#1e2850" stroke="#2a4080" stroke-width="1"/>
+<text x="160" y="328" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Поддержка Mostbet</text>
+<text x="160" y="348" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">Добрый день!</text>
+<text x="160" y="368" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">Чем могу помочь?</text>
+<text x="430" y="390" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#3a4060">10:14</text>
+<!-- User msg 1 -->
+<rect x="270" y="402" width="256" height="56" rx="14" fill="#1a3060"/>
+<text x="290" y="424" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">Вопрос по бонусу</text>
+<text x="290" y="444" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">казино</text>
+<text x="516" y="470" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#3a4060">10:15 ✓✓</text>
+<!-- Agent msg 2 -->
+<rect x="144" y="482" width="320" height="86" rx="14" fill="#1e2850" stroke="#2a4080" stroke-width="1"/>
+<text x="160" y="504" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Поддержка Mostbet</text>
+<text x="160" y="524" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">Конечно! Уточните,</text>
+<text x="160" y="544" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">какой именно бонус</text>
+<text x="160" y="558" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">вас интересует?</text>
+<!-- User msg 2 -->
+<rect x="220" y="582" width="306" height="72" rx="14" fill="#1a3060"/>
+<text x="240" y="604" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">Приветственный бонус</text>
+<text x="240" y="624" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0">50 000 &#8381; + фриспины</text>
+<text x="516" y="666" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#3a4060">10:16 ✓✓</text>
+<!-- Agent typing -->
+<rect x="144" y="678" width="200" height="52" rx="14" fill="#1e2850" stroke="#2a4080" stroke-width="1"/>
+<text x="160" y="700" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Поддержка</text>
+<text x="170" y="718" font-family="Arial,sans-serif" font-size="18" fill="#7a86a0">&#8226; &#8226; &#8226;</text>
+<!-- Quick replies -->
+<rect x="144" y="744" width="120" height="36" rx="18" fill="#1e2438" stroke="#2a4080" stroke-width="1"/>
+<text x="204" y="767" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Слоты</text>
+<rect x="276" y="744" width="120" height="36" rx="18" fill="#1e2438" stroke="#2a4080" stroke-width="1"/>
+<text x="336" y="767" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Лайв</text>
+<rect x="408" y="744" width="120" height="36" rx="18" fill="#1e2438" stroke="#2a4080" stroke-width="1"/>
+<text x="468" y="767" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Вейджер</text>
+<!-- Input area -->
+<rect x="130" y="942" width="414" height="80" fill="#070a10"/>
+<line x1="130" y1="942" x2="544" y2="942" stroke="#1a2040" stroke-width="1"/>
+<rect x="144" y="955" width="316" height="52" rx="26" fill="#1e2438"/>
+<text x="168" y="986" font-family="Arial,sans-serif" font-size="14" fill="#3a4060">Написать сообщение...</text>
+<circle cx="510" cy="981" r="24" fill="#f0c040"/>
+<text x="510" y="989" text-anchor="middle" font-size="20">&#10148;</text>
+<!-- Bottom nav -->
+<rect x="130" y="1060" width="414" height="70" fill="#070a10"/>
+<line x1="130" y1="1060" x2="544" y2="1060" stroke="#1a2040" stroke-width="1"/>
+<text x="199" y="1100" text-anchor="middle" font-size="28">🏠</text>
+<text x="261" y="1100" text-anchor="middle" font-size="28">🎰</text>
+<text x="337" y="1100" text-anchor="middle" font-size="28">💬</text>
+<text x="413" y="1100" text-anchor="middle" font-size="28">🎁</text>
+<text x="475" y="1100" text-anchor="middle" font-size="28">👤</text>
+<rect x="277" y="1120" width="120" height="6" rx="3" fill="#3a4060"/>
+</svg>
+</div>
+</div></section>
+
+<!-- CARDS -->
+<section><div class="container"><div class="section-head"><h2>Mostbet Casino: краткое резюме для принятия решения</h2><p>Эти блоки систематизируют основную информацию, не дублируя маршрут других версий сайта.</p></div>
+<div class="bonos-grid">
+<article class="bono-card"><span class="badge">СЛОТЫ</span><h3>Лобби казино</h3><p>Слоты, лайв-казино и краш-игры представлены как отдельные категории.</p><a class="btn btn-primary" href="../slots/" style="margin-top:8px">Слоты</a></article>
+<article class="bono-card"><span class="badge">ЛАЙВ</span><h3>Бонусы в играх</h3><p>Не каждый бонус работает для любого стола или слота.</p><a class="btn btn-primary" href="../live-casino/" style="margin-top:8px">Лайв-казино</a></article>
+<article class="bono-card"><span class="badge">КРАШ</span><h3>Использование в России</h3><p>Страница ориентирована на российских пользователей и локальные запросы.</p><a class="btn btn-primary" href="../aviator/" style="margin-top:8px">Авиатор</a></article>
+<article class="bono-card"><span class="badge">БОНУС</span><h3>Контроль баланса</h3><p>Онлайн-казино требует чётких лимитов перед игрой.</p><a class="btn btn-primary" href="../promotions/" style="margin-top:8px">Акции</a></article>
+</div></div></section>
+
+<!-- TABLE -->
+<section style="background:var(--bg-2)"><div class="container prose">
+<div class="section-head"><h2>Краткий обзор: Mostbet Casino</h2><p>Короткая таблица с ключевыми пунктами, которые стоит изучить до регистрации, пополнения счёта или активации акции.</p></div>
+<table><thead><tr><th>Тема</th><th>Что проверить</th><th>Результат для пользователя</th></tr></thead><tbody>
+<tr><td>Доступ</td><td>Убедиться в корректности домена, приложения или веб-маршрута</td><td>Снижается риск входа через неверные ссылки.</td></tr>
+<tr><td>Бонусы</td><td>Изучить вейджер, сроки, допустимые игры и лимиты</td><td>Осознанный выбор перед активацией акции.</td></tr>
+<tr><td>Аккаунт</td><td>Проверить данные, email, телефон и способы оплаты</td><td>Меньше блокировок при выводе или восстановлении.</td></tr>
+</tbody></table>
+</div></section>
+
+<!-- SPLIT REVERSE: payment-methods -->
+<section><div class="container prose-with-image"><div class="split reverse">
+<div class="split-text">
+<h2>Иной взгляд на Mostbet Casino</h2>
+<p>Эта страница рассматривает mostbet casino как конкретный запрос, а не как повторение бренда. Цель: помочь российскому пользователю разграничить доступ, бонус, игру и поддержку до принятия решения.</p>
+<p>Информация о Mostbet Casino подаётся с практической точки зрения: что проверить первым делом, какие условия могут меняться и когда стоит сделать паузу и прочитать полные правила.</p>
+<a class="btn btn-primary" href="../is-it-safe/">Проверить безопасность</a>
+</div>
+<div class="split-img">
+<!-- IMAGE 3: payment-methods.webp -->
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="pmbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#09090f"/><stop offset="100%" stop-color="#121018"/></linearGradient>
+<radialGradient id="pmgl" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#1a60ff" stop-opacity="0.08"/><stop offset="100%" stop-color="#1a60ff" stop-opacity="0"/></radialGradient>
+<linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a2a5e"/><stop offset="100%" stop-color="#0a1030"/></linearGradient>
+<linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1e0a1a"/><stop offset="100%" stop-color="#2a0a14"/></linearGradient>
+<linearGradient id="cg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a1a0a"/><stop offset="100%" stop-color="#102010"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#pmbg)"/>
+<rect width="1200" height="675" fill="url(#pmgl)"/>
+<circle cx="600" cy="337" r="320" fill="none" stroke="#1a2040" stroke-width="1" opacity="0.3"/>
+<circle cx="600" cy="337" r="260" fill="none" stroke="#1a2040" stroke-width="1" opacity="0.2"/>
+<!-- Left content -->
+<text x="60" y="100" font-family="Arial,sans-serif" font-size="13" fill="#4060ff" letter-spacing="4">ПОПОЛНЕНИЕ И ВЫВОД</text>
+<text x="60" y="148" font-family="Arial Black,sans-serif" font-size="42" fill="#ffffff" font-weight="900" letter-spacing="-1">СПОСОБЫ</text>
+<text x="60" y="196" font-family="Arial Black,sans-serif" font-size="42" fill="#f0c040" font-weight="900" letter-spacing="-1">ОПЛАТЫ</text>
+<rect x="60" y="210" width="200" height="3" rx="2" fill="#f0c040" opacity="0.5"/>
+<text x="60" y="248" font-family="Arial,sans-serif" font-size="15" fill="#7a86a0">Пополнение и вывод</text>
+<text x="60" y="270" font-family="Arial,sans-serif" font-size="15" fill="#7a86a0">в рублях и криптовалюте</text>
+<rect x="60" y="298" width="160" height="38" rx="10" fill="#1e2438"/>
+<text x="82" y="322" font-family="Arial,sans-serif" font-size="14" fill="#f0c040">⚡ Мгновенный ввод</text>
+<rect x="60" y="348" width="180" height="38" rx="10" fill="#1e2438"/>
+<text x="82" y="372" font-family="Arial,sans-serif" font-size="14" fill="#f0c040">✓ Мин. депозит 100&#8381;</text>
+<rect x="60" y="398" width="180" height="38" rx="10" fill="#1e2438"/>
+<text x="82" y="422" font-family="Arial,sans-serif" font-size="14" fill="#f0c040">🔒 SSL-шифрование</text>
+<rect x="60" y="456" width="280" height="90" rx="14" fill="#1e1400" stroke="#f0c040" stroke-width="1" stroke-opacity="0.3"/>
+<text x="80" y="482" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Скорость вывода</text>
+<text x="80" y="510" font-family="Arial Black,sans-serif" font-size="22" fill="#f0c040">До 24 часов</text>
+<text x="80" y="532" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">для большинства методов</text>
+<!-- Cards -->
+<g transform="rotate(-8 640 280)">
+<rect x="570" y="160" width="280" height="170" rx="16" fill="url(#cg1)" stroke="#2a3a80" stroke-width="1"/>
+<rect x="596" y="196" width="44" height="34" rx="6" fill="#d4a820"/>
+<rect x="600" y="200" width="36" height="10" rx="3" fill="#b8901a"/>
+<rect x="600" y="214" width="36" height="10" rx="3" fill="#b8901a"/>
+<text x="590" y="270" font-family="monospace" font-size="14" fill="#8090b0" letter-spacing="4">4512 &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; 7823</text>
+<text x="800" y="318" text-anchor="end" font-family="Arial Black,sans-serif" font-size="22" fill="#ffffff" font-weight="900" font-style="italic">VISA</text>
+<text x="590" y="316" font-family="Arial,sans-serif" font-size="12" fill="#5a6a90">Держатель</text>
+<text x="590" y="330" font-family="Arial,sans-serif" font-size="14" fill="#b0c0e0">IVAN PETROV</text>
+</g>
+<g transform="rotate(6 780 360)">
+<rect x="710" y="270" width="280" height="170" rx="16" fill="url(#cg2)" stroke="#4a1a30" stroke-width="1"/>
+<circle cx="756" cy="340" r="28" fill="#eb001b" opacity="0.85"/>
+<circle cx="796" cy="340" r="28" fill="#f79e1b" opacity="0.85"/>
+<ellipse cx="776" cy="340" rx="14" ry="24" fill="#ff5f00" opacity="0.7"/>
+<text x="800" y="420" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#b08090">mastercard</text>
+<text x="726" y="408" font-family="monospace" font-size="14" fill="#8070a0" letter-spacing="4">5234 &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; 4511</text>
+<text x="726" y="430" font-family="Arial,sans-serif" font-size="14" fill="#c0a0b8">ANNA IVANOVA</text>
+</g>
+<g transform="rotate(2 640 460)">
+<rect x="560" y="390" width="280" height="170" rx="16" fill="url(#cg3)" stroke="#1a4020" stroke-width="1"/>
+<rect x="580" y="416" width="80" height="36" rx="8" fill="#27ae60" opacity="0.9"/>
+<text x="620" y="440" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="16" fill="#ffffff" font-weight="900">МИР</text>
+<text x="580" y="490" font-family="monospace" font-size="14" fill="#608060" letter-spacing="4">2200 &#9679;&#9679;&#9679;&#9679; &#9679;&#9679;&#9679;&#9679; 3301</text>
+<text x="580" y="540" font-family="Arial,sans-serif" font-size="14" fill="#80a880">SERGEI VOLKOV</text>
+</g>
+<!-- Right panel: crypto -->
+<rect x="1000" y="80" width="180" height="510" fill="#0a0c14" opacity="0.9"/>
+<line x1="1000" y1="80" x2="1000" y2="590" stroke="#1a2040" stroke-width="1"/>
+<text x="1010" y="110" font-family="Arial,sans-serif" font-size="11" fill="#3a4060" letter-spacing="2">ЕЩЁ МЕТОДЫ</text>
+<rect x="1010" y="124" width="160" height="64" rx="10" fill="#1e2438"/>
+<circle cx="1038" cy="156" r="14" fill="#f7931a" opacity="0.4"/>
+<text x="1038" y="162" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="14" fill="#f7931a">&#8383;</text>
+<text x="1064" y="148" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Bitcoin</text>
+<text x="1064" y="166" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Мгновенно</text>
+<rect x="1010" y="198" width="160" height="64" rx="10" fill="#1e2438"/>
+<circle cx="1038" cy="230" r="14" fill="#26a17b" opacity="0.4"/>
+<text x="1038" y="236" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="11" fill="#26a17b">&#8366;</text>
+<text x="1064" y="222" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">USDT</text>
+<text x="1064" y="240" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">TRC20 / ERC20</text>
+<rect x="1010" y="272" width="160" height="64" rx="10" fill="#1e2438"/>
+<circle cx="1038" cy="304" r="14" fill="#4060ff" opacity="0.4"/>
+<text x="1038" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#6080ff" font-weight="700">СБП</text>
+<text x="1064" y="296" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">СБП</text>
+<text x="1064" y="314" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Банк России</text>
+<rect x="1010" y="346" width="160" height="64" rx="10" fill="#1e2438"/>
+<circle cx="1038" cy="378" r="14" fill="#ff8c00" opacity="0.4"/>
+<text x="1038" y="383" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">💳</text>
+<text x="1064" y="370" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Банк. перевод</text>
+<text x="1064" y="388" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">RU банки</text>
+<rect x="1010" y="420" width="160" height="64" rx="10" fill="#1e2438"/>
+<circle cx="1038" cy="452" r="14" fill="#627eea" opacity="0.4"/>
+<text x="1038" y="458" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#627eea">&#9830;</text>
+<text x="1064" y="444" font-family="Arial,sans-serif" font-size="14" fill="#e8eaf0" font-weight="600">Ethereum</text>
+<text x="1064" y="462" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">До 1 часа</text>
+<rect x="1010" y="498" width="160" height="58" rx="10" fill="#0a1200" stroke="#27ae60" stroke-width="1" stroke-opacity="0.5"/>
+<text x="1090" y="522" text-anchor="middle" font-family="Arial,sans-serif" font-size="22">🔒</text>
+<text x="1090" y="544" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#27ae60" font-weight="600">SSL защита</text>
+</svg>
+</div>
+</div></div></section>
+
+<!-- SPLIT: slots-tragamonedas -->
+<section><div class="container prose-with-image"><div class="split">
+<div class="split-text">
+<h2>Региональный контекст Mostbet Casino RU</h2>
+<p>Семантическое поле вокруг Mostbet охватывается органично. Именно поэтому упоминания Mostbet RU, приложения, входа, акций, онлайн-казино и ставок на спорт появляются там, где они добавляют смысл.</p>
+<p>Структура этой версии переработана. Блоки не повторяют маршрут предыдущих вариантов, и каждая страница сохраняет отдельное намерение внутри сайта.</p>
+<a class="btn btn-primary" href="../slots/">Смотреть слоты</a>
+</div>
+<div class="split-img">
+<!-- IMAGE 4: slots-tragamonedas.webp -->
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="slbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a0512"/><stop offset="100%" stop-color="#12081a"/></linearGradient>
+<radialGradient id="slgl" cx="60%" cy="45%" r="50%"><stop offset="0%" stop-color="#7020c0" stop-opacity="0.14"/><stop offset="100%" stop-color="#7020c0" stop-opacity="0"/></radialGradient>
+<radialGradient id="slg2" cx="60%" cy="45%" r="40%"><stop offset="0%" stop-color="#f0c040" stop-opacity="0.08"/><stop offset="100%" stop-color="#f0c040" stop-opacity="0"/></radialGradient>
+<linearGradient id="reel" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1a1020"/><stop offset="100%" stop-color="#0e0818"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#slbg)"/>
+<rect width="1200" height="675" fill="url(#slgl)"/>
+<rect width="1200" height="675" fill="url(#slg2)"/>
+<rect x="16" y="16" width="1168" height="643" rx="16" fill="none" stroke="#7020c0" stroke-width="1" opacity="0.15"/>
+<!-- Slot machine body -->
+<rect x="80" y="80" width="520" height="520" rx="20" fill="#12081e" stroke="#3a1060" stroke-width="2"/>
+<rect x="80" y="80" width="520" height="60" rx="20" fill="#1e0e30"/>
+<text x="340" y="120" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="26" fill="#f0c040" font-weight="900" letter-spacing="2">SLOTS</text>
+<text x="340" y="138" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0" letter-spacing="4">MOSTBET CASINO</text>
+<!-- Jackpot -->
+<rect x="100" y="152" width="480" height="56" rx="10" fill="#0a0414" stroke="#f0c040" stroke-width="1" stroke-opacity="0.5"/>
+<text x="340" y="172" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0" letter-spacing="2">ПРОГРЕССИВНЫЙ ДЖЕКПОТ</text>
+<text x="340" y="198" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="28" fill="#f0c040" font-weight="900">&#8381; 2 840 550</text>
+<!-- Reels -->
+<rect x="100" y="220" width="480" height="240" rx="12" fill="#0a0414" stroke="#2a1040" stroke-width="1"/>
+<rect x="110" y="230" width="146" height="220" rx="8" fill="url(#reel)"/>
+<rect x="110" y="300" width="146" height="80" fill="#1e0e30" opacity="0.4"/>
+<text x="183" y="358" text-anchor="middle" font-size="56">🍒</text>
+<text x="183" y="268" text-anchor="middle" font-size="40" opacity="0.4">7️⃣</text>
+<text x="183" y="428" text-anchor="middle" font-size="40" opacity="0.4">⭐</text>
+<rect x="267" y="230" width="146" height="220" rx="8" fill="url(#reel)"/>
+<rect x="267" y="300" width="146" height="80" fill="#1e0e30" opacity="0.4"/>
+<text x="340" y="358" text-anchor="middle" font-size="56">🍒</text>
+<text x="340" y="268" text-anchor="middle" font-size="40" opacity="0.4">💎</text>
+<text x="340" y="428" text-anchor="middle" font-size="40" opacity="0.4">🔔</text>
+<rect x="424" y="230" width="146" height="220" rx="8" fill="url(#reel)"/>
+<rect x="424" y="300" width="146" height="80" fill="#1e0e30" opacity="0.4"/>
+<text x="497" y="358" text-anchor="middle" font-size="56">🍒</text>
+<text x="497" y="268" text-anchor="middle" font-size="40" opacity="0.4">🎰</text>
+<text x="497" y="428" text-anchor="middle" font-size="40" opacity="0.4">💰</text>
+<line x1="110" y1="340" x2="570" y2="340" stroke="#f0c040" stroke-width="2" stroke-dasharray="8 4" opacity="0.6"/>
+<!-- Win display -->
+<rect x="100" y="472" width="480" height="52" rx="10" fill="#1e1400" stroke="#f0c040" stroke-width="1" stroke-opacity="0.4"/>
+<text x="340" y="493" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">ВЫИГРЫШ</text>
+<text x="340" y="512" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="20" fill="#f0c040" font-weight="900">&#8381; 840</text>
+<!-- Controls -->
+<rect x="100" y="536" width="480" height="54" rx="10" fill="#12081e"/>
+<text x="130" y="556" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Ставка</text>
+<rect x="130" y="562" width="90" height="22" rx="7" fill="#1e2438"/>
+<text x="175" y="578" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#fff">&#8381; 50</text>
+<text x="250" y="556" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Линии</text>
+<rect x="250" y="562" width="70" height="22" rx="7" fill="#1e2438"/>
+<text x="285" y="578" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#fff">20</text>
+<rect x="360" y="540" width="200" height="44" rx="14" fill="#f0c040"/>
+<text x="460" y="567" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="18" fill="#000" font-weight="900">КРУТИТЬ</text>
+<!-- Right game thumbnails -->
+<rect x="624" y="60" width="556" height="560" fill="#09060f" opacity="0.9"/>
+<line x1="624" y1="60" x2="624" y2="620" stroke="#1a1428" stroke-width="1"/>
+<text x="644" y="92" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0" letter-spacing="2">ПОПУЛЯРНЫЕ СЛОТЫ</text>
+<rect x="644" y="106" width="240" height="130" rx="10" fill="#1a0828"/>
+<rect x="644" y="106" width="240" height="65" rx="10" fill="#240a38"/>
+<text x="764" y="152" text-anchor="middle" font-size="38">🍭</text>
+<text x="764" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0" font-weight="600">Sweet Bonanza</text>
+<text x="764" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">RTP 96.5% · Pragmatic</text>
+<rect x="900" y="106" width="240" height="130" rx="10" fill="#080a28"/>
+<rect x="900" y="106" width="240" height="65" rx="10" fill="#101840"/>
+<text x="1020" y="152" text-anchor="middle" font-size="38">⚡</text>
+<text x="1020" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0" font-weight="600">Gates of Olympus</text>
+<text x="1020" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">RTP 96.5% · Pragmatic</text>
+<rect x="644" y="250" width="240" height="130" rx="10" fill="#200a00"/>
+<rect x="644" y="250" width="240" height="65" rx="10" fill="#301000"/>
+<text x="764" y="296" text-anchor="middle" font-size="38">🐯</text>
+<text x="764" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0" font-weight="600">Fortune Tiger</text>
+<text x="764" y="356" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">RTP 96.8% · PG Soft</text>
+<rect x="900" y="250" width="240" height="130" rx="10" fill="#001420"/>
+<rect x="900" y="250" width="240" height="65" rx="10" fill="#001e30"/>
+<text x="1020" y="296" text-anchor="middle" font-size="38">🐟</text>
+<text x="1020" y="338" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0" font-weight="600">Big Bass Bonanza</text>
+<text x="1020" y="356" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">RTP 96.7% · Pragmatic</text>
+<rect x="644" y="394" width="240" height="130" rx="10" fill="#0a0c14"/>
+<rect x="644" y="394" width="240" height="65" rx="10" fill="#101420"/>
+<text x="764" y="440" text-anchor="middle" font-size="38">💎</text>
+<text x="764" y="482" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0" font-weight="600">Starburst</text>
+<text x="764" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">RTP 96.1% · NetEnt</text>
+<rect x="900" y="394" width="240" height="130" rx="10" fill="#1a0a00"/>
+<rect x="900" y="394" width="240" height="65" rx="10" fill="#281000"/>
+<text x="1020" y="440" text-anchor="middle" font-size="38">📖</text>
+<text x="1020" y="482" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0" font-weight="600">Book of Ra Deluxe</text>
+<text x="1020" y="500" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">RTP 95.0% · Novomatic</text>
+<rect x="644" y="538" width="496" height="48" rx="12" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="892" y="567" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#f0c040" font-weight="600">Все слоты 5000+ →</text>
+</svg>
+</div>
+</div></div></section>
+
+<!-- PRODUCTS -->
+<section class="productos"><div class="container"><div class="section-head"><h2>Другие разделы Mostbet</h2><p>Перейдите в раздел, соответствующий вашему запросу: приложение, казино, спорт, бонусы, аккаунт, поддержка или быстрые игры.</p></div>
+<div class="prod-grid">
+<a class="prod-card" href="../lucky-jet/"><div class="icon">🚀</div><span class="title">Lucky Jet</span></a>
+<a class="prod-card" href="../mines/"><div class="icon">💣</div><span class="title">Mines</span></a>
+<a class="prod-card" href="../promotions/"><div class="icon">🎁</div><span class="title">Акции</span></a>
+<a class="prod-card" href="../promo-code/"><div class="icon">🏷</div><span class="title">Промокод</span></a>
+<a class="prod-card" href="../app/"><div class="icon">📱</div><span class="title">Приложение</span></a>
+<a class="prod-card" href="../vip/"><div class="icon">👑</div><span class="title">VIP-программа</span></a>
+</div></div></section>
+
+<!-- FAQ -->
+<section class="faq"><div class="container"><div class="section-head"><h2>Часто задаваемые вопросы</h2></div>
+<div class="faq-list">
+<details class="faq-item" open=""><summary>Отвечает ли страница на запрос mostbet casino?</summary><p>Да. Контент ориентирован на этот запрос и связывает его с Mostbet Россия, Mostbet RU, приложением, бонусами или поддержкой там, где это уместно.</p></details>
+<details class="faq-item"><summary>Заменяет ли она официальные условия?</summary><p>Нет. Это редакционное руководство; актуальные условия необходимо проверять на платформе перед принятием бонусов или размещением ставок.</p></details>
+<details class="faq-item"><summary>Касается ли она мобильного использования?</summary><p>Да, там, где это уместно, упоминаются Mostbet app, мобильная версия, APK, iOS или доступ через мобильный браузер.</p></details>
+<details class="faq-item"><summary>Что проверить перед игрой на реальные деньги?</summary><p>Домен, аккаунт, способы оплаты, правила игры, требования к бонусам и персональные лимиты.</p></details>
+</div></div></section>
+
+</main>
+<footer>
+<div class="container">
+<div class="foot-grid">
+<div>
+<div class="foot-logo">
+<svg viewBox="0 0 250 56" style="height:40px;width:auto" xmlns="http://www.w3.org/2000/svg">
+<rect width="250" height="56" rx="8" fill="#1e2438"/>
+<text x="14" y="38" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900"><tspan fill="#f0c040">MOST</tspan><tspan fill="#e8eaf0">BET</tspan></text>
+<text x="14" y="52" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0" letter-spacing="3">РОССИЯ</text>
+</svg>
+</div>
+<p style="font-size:14px">Редакционное руководство на русском языке для России по темам: Mostbet, Mostbet RU, онлайн-казино, слоты, ставки на спорт, акции, промокоды, регистрация и поддержка.</p>
+<p class="foot-disclaimer">Контент предназначен для пользователей 18 лет и старше. Перед совершением ставок изучите требования, лимиты, условия бонусов, каналы поддержки и инструменты ответственной игры.</p>
+</div>
+<div><h2 class="foot-h">Игры</h2><ul>
+<li><a href="../casino/">Mostbet казино</a></li>
+<li><a href="../slots/">Слоты</a></li>
+<li><a href="../live-casino/">Лайв-казино</a></li>
+<li><a href="../aviator/">Авиатор</a></li>
+</ul></div>
+<div><h2 class="foot-h">Доступ</h2><ul>
+<li><a href="../registration/">Регистрация Mostbet</a></li>
+<li><a href="../login/">Вход Mostbet</a></li>
+<li><a href="../app/">Приложение Mostbet</a></li>
+<li><a href="../is-it-safe/">Безопасно ли?</a></li>
+</ul></div>
+<div><h2 class="foot-h">Акции</h2><ul>
+<li><a href="../promotions/">Акции</a></li>
+<li><a href="../promo-code/">Промокод Mostbet</a></li>
+<li><a href="../welcome-bonus/">Приветственный бонус</a></li>
+<li><a href="../support/">Поддержка Mostbet RU</a></li>
+</ul></div>
+</div>
+<div class="foot-bottom"><span>&#169; 2026 · Редакционное руководство Mostbet Россия</span><span>18+ · ответственная информация</span></div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mostbet Mines Россия | Игра Mines, клетки и риск</title>
+<meta content="Руководство по Mostbet Mines в России с клетками, минами, кэшаутом выигрыша, мобильным приложением, онлайн-казино и советами по ответственной игре." name="description"/>
+<meta content="mostbet mines россия, mostbet mines, mostbet казино, mostbet игра, mostbet app" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<style>
+:root{
+  --bg-1:#0d1117;--bg-2:#121820;--bg-3:#1a1f2e;
+  --card:#1e2438;--border:#2a3050;
+  --text:#e8eaf0;--text-mute:#7a86a0;
+  --gold:#f0c040;--orange:#ff6b35;
+  --r:12px;--w:1200px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg-1);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6}
+a{color:var(--gold);text-decoration:none}a:hover{color:#fff}
+.container{max-width:var(--w);margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:11px 24px;border-radius:8px;font-weight:600;font-size:15px;cursor:pointer;transition:all .2s;border:none}
+.btn-primary{background:var(--gold);color:#000}.btn-primary:hover{background:#ffd050}
+.btn-ghost{background:transparent;color:var(--text);border:1px solid var(--border)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.topbar{background:var(--bg-3);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;max-width:var(--w);margin:0 auto;padding:0 24px;height:76px;gap:16px}
+.logo{display:flex;align-items:center}
+.top-actions{display:flex;align-items:center;gap:12px}
+.lang{font-size:13px;color:var(--text-mute);white-space:nowrap}
+.mainnav{background:var(--bg-2);border-bottom:1px solid var(--border)}
+.mainnav-inner{max-width:var(--w);margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.mainnav-inner::-webkit-scrollbar{display:none}
+.mainnav a{display:inline-block;padding:12px 15px;font-size:14px;color:var(--text-mute);white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
+.mainnav a:hover{color:var(--gold)}
+.breadcrumbs{display:flex;align-items:center;gap:8px;padding:12px 0;font-size:13px;color:var(--text-mute)}
+.breadcrumbs a{color:var(--text-mute)}.sep{color:var(--border)}
+section{padding:56px 0}
+.hero{padding:64px 0}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(26px,3.5vw,42px);line-height:1.2;margin-bottom:20px}
+.lead{font-size:17px;color:var(--text-mute);margin-bottom:28px;line-height:1.7}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img,.app-img,.split-img{border-radius:var(--r);overflow:hidden}
+.hero-img svg,.app-img svg,.split-img svg{width:100%;height:auto;display:block;border-radius:var(--r)}
+.section-head{text-align:center;margin-bottom:40px}
+.section-head h2{font-size:clamp(20px,2.8vw,32px);margin-bottom:12px}
+.section-head p{color:var(--text-mute);max-width:600px;margin:0 auto;font-size:15px}
+section h2{font-size:clamp(18px,2.5vw,28px);margin-bottom:14px}
+.prose{padding:8px 0}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+th{background:var(--bg-3);color:var(--gold);font-size:13px;text-align:left;padding:12px 16px;border-bottom:1px solid var(--border)}
+td{padding:12px 16px;border-bottom:1px solid var(--border);font-size:14px;color:var(--text-mute)}
+tr:last-child td{border-bottom:none}td:first-child{color:var(--text);font-weight:500}
+.app{background:var(--bg-2)}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.app-cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.features{list-style:none;margin:18px 0;display:flex;flex-direction:column;gap:10px}
+.features li{padding-left:24px;position:relative;color:var(--text-mute);font-size:15px}
+.features li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.prose-with-image .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.reverse{direction:rtl}.reverse>*{direction:ltr}
+.split-text{display:flex;flex-direction:column;gap:14px}
+.split-text p{color:var(--text-mute);line-height:1.7;font-size:15px}
+.bonos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.bono-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:8px}
+.bono-card h3{font-size:17px}.bono-card p{color:var(--text-mute);font-size:14px;line-height:1.6}
+.badge{display:inline-block;background:var(--gold);color:#000;font-size:11px;font-weight:700;padding:3px 10px;border-radius:6px;letter-spacing:.5px;width:fit-content}
+.productos{background:var(--bg-2)}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
+.prod-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px 14px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;color:var(--text);transition:all .2s}
+.prod-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.prod-card .icon{font-size:26px}.prod-card .title{font-size:13px;font-weight:500}
+.faq{background:var(--bg-2)}
+.faq-list{display:flex;flex-direction:column;gap:10px;max-width:780px;margin:0 auto}
+.faq-item{background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.faq-item summary{padding:16px 22px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:15px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-size:18px;color:var(--gold);margin-left:12px;flex-shrink:0}
+.faq-item[open] summary::after{content:"−"}
+.faq-item p{padding:0 22px 16px;color:var(--text-mute);font-size:14px;line-height:1.7}
+footer{background:var(--bg-3);border-top:1px solid var(--border);padding:48px 0 24px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px;margin-bottom:32px}
+.foot-logo{margin-bottom:14px}
+.foot-h{font-size:12px;font-weight:700;color:var(--text-mute);text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+footer ul li a{font-size:14px;color:var(--text-mute)}footer ul li a:hover{color:var(--gold)}
+.foot-disclaimer{font-size:12px;color:var(--text-mute);margin-top:8px;line-height:1.5}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:22px;border-top:1px solid var(--border);font-size:13px;color:var(--text-mute)}
+@media(max-width:768px){
+  .hero-grid,.app-grid{grid-template-columns:1fr}.hero-img{order:-1}
+  .prose-with-image .split{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}.lang{display:none}}
+@media(max-width:480px){.foot-grid{grid-template-columns:1fr}section{padding:36px 0}}
+</style>
+</head>
+<body>
+<header class="topbar">
+<div class="topbar-inner">
+<a class="logo" href="../">
+<svg viewBox="0 0 250 56" style="height:44px;width:auto" xmlns="http://www.w3.org/2000/svg">
+<rect width="250" height="56" rx="8" fill="#1e2438"/>
+<text x="14" y="38" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900"><tspan fill="#f0c040">MOST</tspan><tspan fill="#e8eaf0">BET</tspan></text>
+<text x="14" y="52" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0" letter-spacing="3">РОССИЯ</text>
+</svg>
+</a>
+<div class="top-actions">
+<span class="lang">&#127479;&#127482; Россия · Русский</span>
+<a class="btn btn-ghost" href="../play-online-now/">Войти</a>
+<a class="btn btn-primary" data-nosnippet="" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Открыть Mostbet</a>
+</div>
+</div>
+<nav class="mainnav"><div class="mainnav-inner"><a class="" href="../casino/">🎰 Казино</a><a class="" href="../slots/">🎲 Слоты</a><a class="" href="../live-casino/">♠ Лайв</a><a class="" href="../sports-betting/">⚽ Спорт</a><a class="" href="../aviator/">✈ Авиатор</a><a class="" href="../promotions/">🎁 Акции</a><a class="" href="../promo-code/">🏷 Коды</a><a class="" href="../app/">📱 Приложение</a><a class="" href="../vip/">👑 VIP</a></div></nav>
+</header>
+<main>
+<div class="container breadcrumbs"><a href="../">Главная</a><span class="sep">›</span><span>Mostbet Mines</span></div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<h1>Mostbet Mines Россия: клетки, мины и контроль риска за раунд</h1>
+<p class="lead">Mines на Mostbet сочетает выбор клеток с решениями о кэшауте. Руководство объясняет темп игры и ключевые моменты, которые стоит проверить.</p>
+<div class="hero-cta">
+<a class="btn btn-primary" data-nosnippet="" href="../play-online-now/" rel="nofollow noopener noreferrer sponsored" target="_blank">Перейти в Mostbet</a>
+<a class="btn btn-ghost" href="../casino/">Казино</a>
+</div>
+</div>
+<div class="hero-img">
+<!-- IMAGE 1: mines-game.webp — Mines Game Interface (landscape) -->
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="mgbg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#06080e"/><stop offset="100%" stop-color="#0c0e18"/></linearGradient>
+<radialGradient id="mgg1" cx="65%" cy="50%" r="50%"><stop offset="0%" stop-color="#f0c040" stop-opacity="0.08"/><stop offset="100%" stop-color="#f0c040" stop-opacity="0"/></radialGradient>
+<radialGradient id="mgg2" cx="30%" cy="40%" r="40%"><stop offset="0%" stop-color="#27ae60" stop-opacity="0.05"/><stop offset="100%" stop-color="#27ae60" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#mgbg)"/>
+<rect width="1200" height="675" fill="url(#mgg1)"/>
+<rect width="1200" height="675" fill="url(#mgg2)"/>
+<!-- Game header bar -->
+<rect x="0" y="0" width="1200" height="44" fill="#040608" opacity="0.97"/>
+<text x="20" y="28" font-family="Arial Black,sans-serif" font-size="16" fill="#f0c040" font-weight="900" letter-spacing="1">MINES</text>
+<text x="110" y="28" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Mostbet Casino</text>
+<rect x="850" y="8" width="160" height="28" rx="7" fill="#1e2438"/>
+<text x="868" y="20" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0">Баланс</text>
+<text x="868" y="34" font-family="Arial Black,sans-serif" font-size="13" fill="#ffffff">&#8381; 5 000</text>
+<rect x="1022" y="8" width="158" height="28" rx="7" fill="#f0c040"/>
+<text x="1101" y="28" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#000" font-weight="700">Пополнить</text>
+
+<!-- MINES GAME GRID (5x5) centered right side -->
+<!-- Grid bg panel -->
+<rect x="575" y="56" width="420" height="560" rx="16" fill="#0c0e18" stroke="#1e2438" stroke-width="1"/>
+<!-- Multiplier display above grid -->
+<rect x="595" y="68" width="380" height="48" rx="10" fill="#1a1400" stroke="#f0c040" stroke-width="1" stroke-opacity="0.4"/>
+<text x="680" y="88" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Текущий множитель</text>
+<text x="680" y="106" font-family="Arial Black,sans-serif" font-size="20" fill="#f0c040" font-weight="900">x 3.20</text>
+<text x="900" y="88" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Открыто: 7/25</text>
+<text x="900" y="106" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#e8eaf0">Мин: 3</text>
+
+<!-- TILE GRID 5x5 -->
+<!-- Tile positions: cols at 592, 648, 704, 760, 816 — rows at 128, 188, 248, 308, 368 -->
+<!-- Row 0: gem, hidden, gem, hidden, gem -->
+<rect x="592" y="128" width="50" height="50" rx="8" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="617" y="162" text-anchor="middle" font-size="28">&#128142;</text>
+<rect x="648" y="128" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="673" y="162" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="704" y="128" width="50" height="50" rx="8" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="729" y="162" text-anchor="middle" font-size="28">&#128142;</text>
+<rect x="760" y="128" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="785" y="162" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="816" y="128" width="50" height="50" rx="8" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="841" y="162" text-anchor="middle" font-size="28">&#128142;</text>
+<!-- Row 1: hidden, gem, hidden, gem, hidden -->
+<rect x="592" y="188" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="617" y="222" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="648" y="188" width="50" height="50" rx="8" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="673" y="222" text-anchor="middle" font-size="28">&#128142;</text>
+<rect x="704" y="188" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="729" y="222" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="760" y="188" width="50" height="50" rx="8" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="785" y="222" text-anchor="middle" font-size="28">&#128142;</text>
+<rect x="816" y="188" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="841" y="222" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<!-- Row 2: gem, hidden, gem, hidden, hidden -->
+<rect x="592" y="248" width="50" height="50" rx="8" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="617" y="282" text-anchor="middle" font-size="28">&#128142;</text>
+<rect x="648" y="248" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="673" y="282" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="704" y="248" width="50" height="50" rx="8" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="729" y="282" text-anchor="middle" font-size="28">&#128142;</text>
+<rect x="760" y="248" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="785" y="282" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="816" y="248" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="841" y="282" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<!-- Row 3: all hidden -->
+<rect x="592" y="308" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="617" y="342" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="648" y="308" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="673" y="342" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="704" y="308" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="729" y="342" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="760" y="308" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="785" y="342" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="816" y="308" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="841" y="342" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<!-- Row 4: all hidden -->
+<rect x="592" y="368" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="617" y="402" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="648" y="368" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="673" y="402" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="704" y="368" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="729" y="402" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="760" y="368" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="785" y="402" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+<rect x="816" y="368" width="50" height="50" rx="8" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="841" y="402" text-anchor="middle" font-size="26" fill="#3a4060">?</text>
+
+<!-- MINES SELECTOR & CONTROLS (bottom of grid panel) -->
+<rect x="592" y="434" width="274" height="50" rx="10" fill="#1a1428"/>
+<text x="608" y="454" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Количество мин</text>
+<rect x="608" y="462" width="52" height="14" rx="4" fill="#1e2438"/>
+<text x="634" y="474" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="12" fill="#f0c040">3</text>
+<!-- Mine dots indicator -->
+<circle cx="700" cy="462" r="7" fill="#c0392b" opacity="0.9"/>
+<circle cx="720" cy="462" r="7" fill="#c0392b" opacity="0.9"/>
+<circle cx="740" cy="462" r="7" fill="#c0392b" opacity="0.9"/>
+<circle cx="760" cy="462" r="7" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<circle cx="780" cy="462" r="7" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<!-- Stake display -->
+<rect x="592" y="494" width="130" height="50" rx="10" fill="#1e2438"/>
+<text x="608" y="512" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Ставка</text>
+<text x="608" y="532" font-family="Arial Black,sans-serif" font-size="16" fill="#fff" font-weight="900">&#8381; 200</text>
+<!-- Cashout btn -->
+<rect x="730" y="494" width="244" height="50" rx="12" fill="#27ae60"/>
+<text x="852" y="524" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="16" fill="#000" font-weight="900">Кэшаут &#8381; 640</text>
+<!-- Progress bar -->
+<rect x="592" y="554" width="274" height="6" rx="3" fill="#1e2438"/>
+<rect x="592" y="554" width="109" height="6" rx="3" fill="#f0c040" opacity="0.8"/>
+<text x="608" y="574" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Прогресс раунда: 7/22 свободных</text>
+
+<!-- LEFT CONTENT AREA -->
+<text x="60" y="100" font-family="Arial,sans-serif" font-size="13" fill="#f0c040" letter-spacing="4">MINES</text>
+<text x="60" y="154" font-family="Arial Black,sans-serif" font-size="52" fill="#fff" font-weight="900" letter-spacing="-2">КЛЕТКИ</text>
+<text x="60" y="206" font-family="Arial Black,sans-serif" font-size="36" fill="#f0c040" font-weight="900" letter-spacing="-1">И МИНЫ</text>
+<rect x="60" y="220" width="200" height="3" rx="2" fill="#f0c040" opacity="0.5"/>
+<text x="60" y="258" font-family="Arial,sans-serif" font-size="14" fill="#7a86a0">Выбирай клетки</text>
+<text x="60" y="278" font-family="Arial,sans-serif" font-size="14" fill="#7a86a0">и вовремя выходи</text>
+
+<!-- Stats badges left -->
+<rect x="60" y="304" width="200" height="40" rx="10" fill="#1e2438"/>
+<text x="82" y="328" font-family="Arial,sans-serif" font-size="14" fill="#f0c040">&#128142; Поле 5&#215;5</text>
+<rect x="60" y="356" width="200" height="40" rx="10" fill="#1e2438"/>
+<text x="82" y="380" font-family="Arial,sans-serif" font-size="14" fill="#f0c040">💣 Мины: 1–24</text>
+<rect x="60" y="408" width="200" height="40" rx="10" fill="#1e2438"/>
+<text x="82" y="432" font-family="Arial,sans-serif" font-size="14" fill="#f0c040">&#9654; Авто-кэшаут</text>
+
+<!-- Game stats block -->
+<rect x="60" y="468" width="280" height="110" rx="14" fill="#0c0e18" stroke="#f0c040" stroke-width="1" stroke-opacity="0.35"/>
+<text x="80" y="496" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Текущий раунд</text>
+<text x="80" y="524" font-family="Arial Black,sans-serif" font-size="26" fill="#f0c040" font-weight="900">x 3.20</text>
+<text x="80" y="546" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Открыто 7 клеток из 25</text>
+<text x="80" y="568" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">До кэшаута: &#8381; 640</text>
+<text x="60" y="620" font-size="20" fill="#f0c040">&#9733;&#9733;&#9733;&#9733;&#9733;</text>
+<text x="172" y="620" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Топ краш-игр Mostbet</text>
+</svg>
+</div>
+</div>
+</div>
+</section>
+
+<!-- APP SECTION -->
+<section class="app"><div class="container app-grid">
+<div>
+<h2>Чеклист перед использованием Mostbet Mines</h2>
+<p style="color:var(--text-mute);font-size:16px">Сначала разберитесь с операционной частью, а затем принимайте решение об аккаунте, бонусе, игровой сессии или приложении.</p>
+<ul class="features">
+<li>Решите, сколько клеток вы готовы рискнуть, до начала игры.</li>
+<li>Выводите выигрыш, когда риск перестаёт соответствовать вашему балансу.</li>
+<li>Не меняйте стратегию из-за одного проигранного раунда.</li>
+<li>Ознакомьтесь с правилами игры перед применением бонусов.</li>
+</ul>
+<div class="app-cta">
+<a class="btn btn-primary" href="../play-online-now/">Открыть Mostbet</a>
+<a class="btn btn-ghost" href="../lucky-jet/">Lucky Jet</a>
+</div>
+</div>
+<div class="app-img">
+<!-- IMAGE 2: mines-game.webp portrait — Mines game in phone -->
+<svg viewBox="0 0 675 1200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="mg2bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#06080e"/><stop offset="100%" stop-color="#0c0e18"/></linearGradient>
+<radialGradient id="mg2gl" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#f0c040" stop-opacity="0.07"/><stop offset="100%" stop-color="#f0c040" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="675" height="1200" fill="url(#mg2bg)"/>
+<rect width="675" height="1200" fill="url(#mg2gl)"/>
+<circle cx="90" cy="200" r="180" fill="none" stroke="#f0c040" stroke-width="1" opacity="0.06"/>
+<circle cx="580" cy="1000" r="160" fill="none" stroke="#27ae60" stroke-width="1" opacity="0.04"/>
+<!-- Feature labels -->
+<rect x="30" y="80" width="130" height="32" rx="16" fill="#1e2438"/>
+<circle cx="52" cy="96" r="8" fill="#f0c040"/>
+<text x="68" y="101" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Поле 5&#215;5</text>
+<rect x="172" y="80" width="120" height="32" rx="16" fill="#1e2438"/>
+<circle cx="194" cy="96" r="8" fill="#c0392b"/>
+<text x="210" y="101" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">1–24 мины</text>
+<rect x="304" y="80" width="120" height="32" rx="16" fill="#1e2438"/>
+<circle cx="326" cy="96" r="8" fill="#27ae60"/>
+<text x="342" y="101" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Кэшаут</text>
+<!-- PHONE BODY -->
+<ellipse cx="337" cy="1170" rx="140" ry="16" fill="#000" opacity="0.28"/>
+<rect x="112" y="136" width="450" height="992" rx="50" fill="#1c2038" stroke="#3a4060" stroke-width="2.5"/>
+<rect x="130" y="158" width="414" height="950" rx="36" fill="#060810"/>
+<rect x="247" y="158" width="180" height="38" rx="19" fill="#1c2038"/>
+<circle cx="337" cy="177" r="9" fill="#060810" stroke="#2a3050" stroke-width="1"/>
+<rect x="560" y="290" width="7" height="72" rx="4" fill="#2a3050"/>
+<rect x="105" y="268" width="7" height="52" rx="4" fill="#2a3050"/>
+<rect x="105" y="332" width="7" height="52" rx="4" fill="#2a3050"/>
+<!-- App header -->
+<rect x="130" y="196" width="414" height="52" fill="#040608"/>
+<text x="152" y="226" font-family="Arial Black,sans-serif" font-size="16" fill="#f0c040" font-weight="900" letter-spacing="1">MINES</text>
+<text x="242" y="226" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">Mostbet</text>
+<rect x="468" y="208" width="68" height="28" rx="8" fill="#27ae60"/>
+<text x="502" y="227" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#000" font-weight="700">Играть</text>
+<!-- Multiplier & mine count display -->
+<rect x="144" y="262" width="384" height="56" rx="12" fill="#1a1400" stroke="#f0c040" stroke-width="1" stroke-opacity="0.5"/>
+<text x="164" y="282" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Множитель</text>
+<text x="164" y="304" font-family="Arial Black,sans-serif" font-size="22" fill="#f0c040" font-weight="900">x 3.20</text>
+<text x="440" y="282" text-anchor="end" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Мины: 3</text>
+<circle cx="400" cy="298" r="9" fill="#c0392b" opacity="0.9"/>
+<circle cx="420" cy="298" r="9" fill="#c0392b" opacity="0.9"/>
+<circle cx="440" cy="298" r="9" fill="#c0392b" opacity="0.9"/>
+
+<!-- 5x5 MINES GRID (compressed for phone) -->
+<!-- Tile size: 68px, gap: 6px, cols: 144, 218, 292, 366, 440 -->
+<!-- Row 0 -->
+<rect x="144" y="334" width="68" height="68" rx="10" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="178" y="378" text-anchor="middle" font-size="36">&#128142;</text>
+<rect x="218" y="334" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="252" y="378" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="292" y="334" width="68" height="68" rx="10" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="326" y="378" text-anchor="middle" font-size="36">&#128142;</text>
+<rect x="366" y="334" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="400" y="378" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="440" y="334" width="68" height="68" rx="10" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="474" y="378" text-anchor="middle" font-size="36">&#128142;</text>
+<!-- Row 1 -->
+<rect x="144" y="408" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="178" y="452" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="218" y="408" width="68" height="68" rx="10" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="252" y="452" text-anchor="middle" font-size="36">&#128142;</text>
+<rect x="292" y="408" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="326" y="452" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="366" y="408" width="68" height="68" rx="10" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="400" y="452" text-anchor="middle" font-size="36">&#128142;</text>
+<rect x="440" y="408" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="474" y="452" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<!-- Row 2 -->
+<rect x="144" y="482" width="68" height="68" rx="10" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="178" y="526" text-anchor="middle" font-size="36">&#128142;</text>
+<rect x="218" y="482" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="252" y="526" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="292" y="482" width="68" height="68" rx="10" fill="#0a2a15" stroke="#27ae60" stroke-width="1.5"/>
+<text x="326" y="526" text-anchor="middle" font-size="36">&#128142;</text>
+<rect x="366" y="482" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="400" y="526" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="440" y="482" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="474" y="526" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<!-- Row 3 -->
+<rect x="144" y="556" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="178" y="600" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="218" y="556" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="252" y="600" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="292" y="556" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="326" y="600" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="366" y="556" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="400" y="600" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="440" y="556" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="474" y="600" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<!-- Row 4 all hidden -->
+<rect x="144" y="630" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="178" y="674" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="218" y="630" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="252" y="674" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="292" y="630" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="326" y="674" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="366" y="630" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="400" y="674" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+<rect x="440" y="630" width="68" height="68" rx="10" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="474" y="674" text-anchor="middle" font-size="30" fill="#3a4060">?</text>
+
+<!-- Cashout button -->
+<rect x="144" y="714" width="384" height="54" rx="14" fill="#27ae60"/>
+<text x="336" y="746" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="17" fill="#000" font-weight="900">Кэшаут &#8381; 640</text>
+
+<!-- Stake row -->
+<rect x="144" y="782" width="184" height="56" rx="12" fill="#1e2438"/>
+<text x="164" y="806" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Ставка</text>
+<text x="164" y="826" font-family="Arial Black,sans-serif" font-size="18" fill="#fff" font-weight="900">&#8381; 200</text>
+<rect x="336" y="782" width="192" height="56" rx="12" fill="#1e2438"/>
+<text x="356" y="806" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Следующий раунд</text>
+<text x="356" y="826" font-family="Arial Black,sans-serif" font-size="16" fill="#f0c040" font-weight="700">&#8250; Старт</text>
+
+<!-- Bottom nav -->
+<rect x="130" y="1060" width="414" height="70" fill="#040608"/>
+<line x1="130" y1="1060" x2="544" y2="1060" stroke="#1a2040" stroke-width="1"/>
+<text x="199" y="1100" text-anchor="middle" font-size="28">🏠</text>
+<text x="261" y="1100" text-anchor="middle" font-size="28">💣</text>
+<text x="337" y="1100" text-anchor="middle" font-size="28">🎰</text>
+<text x="413" y="1100" text-anchor="middle" font-size="28">🎁</text>
+<text x="475" y="1100" text-anchor="middle" font-size="28">👤</text>
+<rect x="277" y="1120" width="120" height="6" rx="3" fill="#3a4060"/>
+</svg>
+</div>
+</div></section>
+
+<!-- CARDS -->
+<section><div class="container"><div class="section-head"><h2>Mostbet Mines: краткое резюме для принятия решения</h2><p>Эти блоки систематизируют основную информацию, не дублируя маршрут других версий сайта.</p></div>
+<div class="bonos-grid">
+<article class="bono-card"><span class="badge">GRID</span><h3>Клетки</h3><p>Каждый выбор изменяет уровень риска текущего раунда.</p></article>
+<article class="bono-card"><span class="badge">MINE</span><h3>Мины</h3><p>Попадание на мину прерывает прогресс игры и сбрасывает раунд.</p></article>
+<article class="bono-card"><span class="badge">TAKE</span><h3>Кэшаут</h3><p>Ранний вывод выигрыша завершает раунд с накопленной наградой.</p></article>
+<article class="bono-card"><span class="badge">APP</span><h3>Контроль</h3><p>Количество открытых клеток не заменяет лимит баланса для сессии.</p><a class="btn btn-primary" href="../app/" style="margin-top:8px">Приложение</a></article>
+</div></div></section>
+
+<!-- TABLE -->
+<section style="background:var(--bg-2)"><div class="container prose">
+<div class="section-head"><h2>Краткий обзор: Mostbet Mines</h2><p>Короткая таблица с ключевыми пунктами, которые стоит изучить до регистрации, пополнения счёта или активации акции.</p></div>
+<table><thead><tr><th>Тема</th><th>Что проверить</th><th>Результат для пользователя</th></tr></thead><tbody>
+<tr><td>Доступ</td><td>Убедиться в корректности домена, приложения или веб-маршрута</td><td>Снижается риск входа через неверные ссылки.</td></tr>
+<tr><td>Бонусы</td><td>Изучить вейджер, сроки, допустимые игры и лимиты</td><td>Осознанный выбор перед активацией акции.</td></tr>
+<tr><td>Аккаунт</td><td>Проверить данные, email, телефон и способы оплаты</td><td>Меньше блокировок при выводе или восстановлении.</td></tr>
+</tbody></table>
+</div></section>
+
+<!-- SPLIT REVERSE: aviator-game -->
+<section><div class="container prose-with-image"><div class="split reverse">
+<div class="split-text">
+<h2>Иной взгляд на Mostbet Mines</h2>
+<p>Эта страница рассматривает mostbet mines как конкретный запрос, а не как повторение бренда. Цель: помочь российскому пользователю разграничить доступ, бонус, игру и поддержку до принятия решения.</p>
+<p>Информация о Mostbet Mines подаётся с практической точки зрения: что проверить первым делом, какие условия могут меняться и когда стоит сделать паузу.</p>
+<a class="btn btn-primary" href="../aviator/">Авиатор</a>
+</div>
+<div class="split-img">
+<!-- IMAGE 3: aviator-game.webp — Aviator game reference -->
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="av3bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a0d18"/><stop offset="100%" stop-color="#0f1422"/></linearGradient>
+<linearGradient id="av3cf" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#00c8ff" stop-opacity="0.18"/><stop offset="100%" stop-color="#00c8ff" stop-opacity="0"/></linearGradient>
+<linearGradient id="av3ml" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f0e040"/><stop offset="100%" stop-color="#ff9020"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#av3bg)"/>
+<circle cx="200" cy="130" r="150" fill="#4060ff" opacity="0.04"/>
+<!-- Comparison header -->
+<rect x="0" y="0" width="1200" height="44" fill="#070a10" opacity="0.96"/>
+<text x="22" y="28" font-family="Arial Black,sans-serif" font-size="13" fill="#f0c040">MINES 💣</text>
+<text x="120" y="28" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">vs</text>
+<text x="148" y="28" font-family="Arial Black,sans-serif" font-size="13" fill="#00c8ff">AVIATOR ✈</text>
+<text x="350" y="28" font-family="Arial,sans-serif" font-size="12" fill="#3a4060">— оба в Mostbet RU</text>
+<!-- Right panel: Mines comparison -->
+<rect x="892" y="44" width="308" height="631" fill="#060810" opacity="0.95"/>
+<line x1="892" y1="44" x2="892" y2="675" stroke="#1a2040" stroke-width="1"/>
+<text x="910" y="74" font-family="Arial,sans-serif" font-size="11" fill="#3a4060" letter-spacing="2">ОТЛИЧИЯ</text>
+<line x1="910" y1="82" x2="1168" y2="82" stroke="#1a2040" stroke-width="1"/>
+<rect x="910" y="92" width="156" height="28" rx="6" fill="#1a1400"/>
+<text x="988" y="110" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#f0c040" font-weight="600">💣 Mines</text>
+<text x="910" y="138" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Поле 5&#215;5 клеток</text>
+<text x="910" y="154" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Мины 1–24 штук</text>
+<text x="910" y="170" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Выбор клетки — решение</text>
+<text x="910" y="186" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Нет временного давления</text>
+<line x1="910" y1="198" x2="1168" y2="198" stroke="#1a2040" stroke-width="1"/>
+<rect x="910" y="208" width="156" height="28" rx="6" fill="#0c1428"/>
+<text x="988" y="226" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#00c8ff" font-weight="600">✈ Aviator</text>
+<text x="910" y="254" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Кривая мультипликатора</text>
+<text x="910" y="270" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Самолёт летит вверх</text>
+<text x="910" y="286" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Быстрые раунды ~30 сек</text>
+<text x="910" y="302" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Высокий темп решений</text>
+<line x1="910" y1="314" x2="1168" y2="314" stroke="#1a2040" stroke-width="1"/>
+<text x="910" y="338" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Общее:</text>
+<text x="910" y="356" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">&#8250; Краш-механика</text>
+<text x="910" y="372" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">&#8250; Авто-кэшаут</text>
+<text x="910" y="388" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">&#8250; Оба от Spribe</text>
+<text x="910" y="404" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">&#8250; Контроль ставки</text>
+<!-- Recent bets -->
+<line x1="910" y1="420" x2="1168" y2="420" stroke="#1a2040" stroke-width="1"/>
+<text x="910" y="444" font-family="Arial,sans-serif" font-size="11" fill="#3a4060" letter-spacing="1">АВИАТОР СТАВКИ</text>
+<text x="910" y="470" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">К***ов</text>
+<text x="1020" y="470" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">500&#8381;</text>
+<rect x="1100" y="455" width="72" height="22" rx="6" fill="#1a3a25"/>
+<text x="1136" y="470" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#27ae60" font-weight="700">x2.80</text>
+<text x="910" y="498" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Т***ва</text>
+<text x="1020" y="498" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">300&#8381;</text>
+<text x="1136" y="498" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#f0c040" font-weight="600">&#8593;x1.90</text>
+<!-- MAIN GAME AREA (Aviator) -->
+<rect x="0" y="44" width="892" height="541" fill="#0a0d18"/>
+<!-- Grid -->
+<line x1="42" y1="144" x2="884" y2="144" stroke="#141a28" stroke-width="1"/>
+<line x1="42" y1="244" x2="884" y2="244" stroke="#141a28" stroke-width="1"/>
+<line x1="42" y1="344" x2="884" y2="344" stroke="#141a28" stroke-width="1"/>
+<line x1="42" y1="444" x2="884" y2="444" stroke="#141a28" stroke-width="1"/>
+<line x1="42" y1="534" x2="884" y2="534" stroke="#141a28" stroke-width="1"/>
+<text x="36" y="148" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#2a3050">4x</text>
+<text x="36" y="248" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#2a3050">3x</text>
+<text x="36" y="348" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#2a3050">2x</text>
+<text x="36" y="448" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#2a3050">1.5x</text>
+<text x="36" y="538" text-anchor="end" font-family="Arial,sans-serif" font-size="11" fill="#2a3050">1x</text>
+<!-- Curve fill -->
+<path d="M 48 577 C 120 577 180 567 250 535 S 360 489 440 443 S 560 379 640 313 S 740 229 800 177 S 848 139 864 109 L 864 577 Z" fill="url(#av3cf)"/>
+<!-- Curve line -->
+<path d="M 48 577 C 120 577 180 567 250 535 S 360 489 440 443 S 560 379 640 313 S 740 229 800 177 S 848 139 864 109" fill="none" stroke="#00c8ff" stroke-width="3" stroke-linecap="round"/>
+<path d="M 48 577 C 120 577 180 567 250 535 S 360 489 440 443 S 560 379 640 313 S 740 229 800 177 S 848 139 864 109" fill="none" stroke="#00c8ff" stroke-width="10" stroke-linecap="round" opacity="0.12"/>
+<!-- Plane -->
+<g transform="translate(844,95) rotate(-42)">
+<ellipse cx="0" cy="0" rx="26" ry="8" fill="#e8f0ff" opacity="0.96"/>
+<path d="M -2 0 L -16 -18 L 6 -7 Z" fill="#b0c0e8" opacity="0.9"/>
+<path d="M -2 0 L -16 18 L 6 7 Z" fill="#b0c0e8" opacity="0.9"/>
+<circle cx="22" cy="0" r="5" fill="#f0e040" opacity="0.7"/>
+</g>
+<!-- Multiplier -->
+<text x="440" y="290" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="96" font-weight="900" fill="url(#av3ml)" opacity="0.92" letter-spacing="-3">x2.45</text>
+<text x="440" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#7a86a0" letter-spacing="3">АВИАТОР</text>
+<!-- Bottom UI -->
+<line x1="0" y1="585" x2="892" y2="585" stroke="#1a2040" stroke-width="1"/>
+<rect x="0" y="585" width="892" height="90" fill="#070a10" opacity="0.98"/>
+<rect x="16" y="597" width="426" height="68" rx="12" fill="#111520"/>
+<text x="32" y="617" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Ставка (₽)</text>
+<rect x="32" y="623" width="156" height="32" rx="8" fill="#1e2438"/>
+<text x="110" y="644" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="18" fill="#ffffff" font-weight="900">300</text>
+<rect x="348" y="609" width="88" height="46" rx="10" fill="#27ae60"/>
+<text x="392" y="637" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#fff" font-weight="700">Кэшаут</text>
+<rect x="452" y="597" width="426" height="68" rx="12" fill="#111520"/>
+<text x="468" y="617" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Ставка 2</text>
+<rect x="468" y="623" width="156" height="32" rx="8" fill="#1e2438"/>
+<text x="546" y="644" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="18" fill="#ffffff" font-weight="900">500</text>
+<rect x="784" y="609" width="88" height="46" rx="10" fill="#2050c0"/>
+<text x="828" y="637" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#fff" font-weight="700">Ставка</text>
+</svg>
+</div>
+</div></div></section>
+
+<!-- SPLIT: mobile-app -->
+<section><div class="container prose-with-image"><div class="split">
+<div class="split-text">
+<h2>Региональный контекст Mostbet Mines Россия</h2>
+<p>Семантическое поле вокруг Mostbet охватывается органично. Именно поэтому упоминания Mostbet RU, приложения, входа, акций, онлайн-казино и ставок на спорт появляются там, где они добавляют смысл.</p>
+<p>Структура этой версии переработана. Блоки не повторяют маршрут предыдущих вариантов, и каждая страница сохраняет отдельное намерение внутри сайта.</p>
+<a class="btn btn-primary" href="../app/">Приложение</a>
+</div>
+<div class="split-img">
+<!-- IMAGE 4: mobile-app.webp — Mostbet App with games menu (landscape) -->
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="ma4bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0a0e1a"/><stop offset="100%" stop-color="#141c30"/></linearGradient>
+<radialGradient id="ma4g1" cx="75%" cy="50%" r="45%"><stop offset="0%" stop-color="#f0c040" stop-opacity="0.09"/><stop offset="100%" stop-color="#f0c040" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#ma4bg)"/>
+<rect width="1200" height="675" fill="url(#ma4g1)"/>
+<circle cx="200" cy="130" r="150" fill="none" stroke="#f0c040" stroke-width="1" opacity="0.07"/>
+<circle cx="1080" cy="580" r="200" fill="none" stroke="#4060ff" stroke-width="1" opacity="0.05"/>
+<!-- Left info -->
+<rect x="60" y="110" width="145" height="36" rx="18" fill="#1e2438"/>
+<circle cx="84" cy="128" r="8" fill="#27ae60"/>
+<text x="100" y="133" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Android APK</text>
+<rect x="60" y="157" width="110" height="36" rx="18" fill="#1e2438"/>
+<circle cx="84" cy="175" r="8" fill="#4060ff"/>
+<text x="100" y="180" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">iOS App</text>
+<rect x="60" y="204" width="125" height="36" rx="18" fill="#1e2438"/>
+<circle cx="84" cy="222" r="8" fill="#f0c040"/>
+<text x="100" y="227" font-family="Arial,sans-serif" font-size="13" fill="#e8eaf0">Мобильная</text>
+<text x="60" y="278" font-size="20" fill="#f0c040">&#9733;&#9733;&#9733;&#9733;&#9733;</text>
+<text x="175" y="278" font-family="Arial,sans-serif" font-size="13" fill="#7a86a0">4.9 · Все игры в одном</text>
+<rect x="60" y="300" width="225" height="60" rx="14" fill="#1e2438" stroke="#2a3050" stroke-width="1"/>
+<text x="85" y="324" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Скачать для</text>
+<text x="85" y="348" font-family="Arial Black,sans-serif" font-size="18" fill="#ffffff" font-weight="900">Android · iOS</text>
+<text x="262" y="340" font-size="26" text-anchor="middle">📱</text>
+<rect x="60" y="385" width="96" height="68" rx="10" fill="#1e2438"/>
+<text x="108" y="412" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="20" fill="#f0c040" font-weight="900">5+</text>
+<text x="108" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">краш-игр</text>
+<rect x="168" y="385" width="96" height="68" rx="10" fill="#1e2438"/>
+<text x="216" y="412" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="20" fill="#f0c040" font-weight="900">24/7</text>
+<text x="216" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">поддержка</text>
+<rect x="276" y="385" width="96" height="68" rx="10" fill="#1e2438"/>
+<text x="324" y="412" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="22" fill="#f0c040" font-weight="900">₽</text>
+<text x="324" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">рубли</text>
+<!-- PHONE (games menu focused) -->
+<ellipse cx="850" cy="634" rx="115" ry="16" fill="#000" opacity="0.35"/>
+<rect x="712" y="46" width="276" height="568" rx="34" fill="#1c2038" stroke="#3a4060" stroke-width="2"/>
+<rect x="726" y="60" width="248" height="540" rx="22" fill="#0c0e18"/>
+<rect x="802" y="60" width="96" height="26" rx="13" fill="#1c2038"/>
+<circle cx="858" cy="73" r="6" fill="#0c0e18" stroke="#2a3050" stroke-width="1"/>
+<rect x="988" y="178" width="5" height="48" rx="3" fill="#2a3050"/>
+<rect x="707" y="158" width="5" height="34" rx="3" fill="#2a3050"/>
+<rect x="707" y="202" width="5" height="34" rx="3" fill="#2a3050"/>
+<!-- App header -->
+<rect x="726" y="86" width="248" height="48" fill="#151928"/>
+<text x="742" y="117" font-family="Arial Black,sans-serif" font-size="16" font-weight="900"><tspan fill="#f0c040">MOST</tspan><tspan fill="#ffffff">BET</tspan></text>
+<rect x="930" y="96" width="36" height="24" rx="6" fill="#f0c040"/>
+<text x="948" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#000" font-weight="700">Вход</text>
+<!-- Balance -->
+<rect x="738" y="146" width="224" height="56" rx="12" fill="#1e2438"/>
+<text x="754" y="168" font-family="Arial,sans-serif" font-size="11" fill="#7a86a0">Баланс</text>
+<text x="754" y="190" font-family="Arial Black,sans-serif" font-size="22" fill="#ffffff" font-weight="900">&#8381; 5 000</text>
+<!-- Games menu pills -->
+<rect x="738" y="218" width="68" height="26" rx="13" fill="#f0c040"/>
+<text x="772" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#000" font-weight="600">Краш</text>
+<rect x="812" y="218" width="58" height="26" rx="13" fill="#1e2438"/>
+<text x="841" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Казино</text>
+<rect x="876" y="218" width="50" height="26" rx="13" fill="#1e2438"/>
+<text x="901" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#7a86a0">Слоты</text>
+<!-- Crash game tiles -->
+<rect x="738" y="256" width="102" height="86" rx="10" fill="#151928"/>
+<rect x="738" y="256" width="102" height="44" rx="10" fill="#1a1a08"/>
+<text x="789" y="284" text-anchor="middle" font-size="24">💣</text>
+<text x="789" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#f0c040">Mines</text>
+<text x="789" y="342" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0">Spribe</text>
+<rect x="850" y="256" width="102" height="86" rx="10" fill="#151928"/>
+<rect x="850" y="256" width="102" height="44" rx="10" fill="#0a1528"/>
+<text x="901" y="284" text-anchor="middle" font-size="24">✈</text>
+<text x="901" y="328" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#f0c040">Авиатор</text>
+<text x="901" y="342" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0">Spribe</text>
+<rect x="738" y="354" width="102" height="86" rx="10" fill="#151928"/>
+<rect x="738" y="354" width="102" height="44" rx="10" fill="#0a2808"/>
+<text x="789" y="382" text-anchor="middle" font-size="24">🚀</text>
+<text x="789" y="426" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#f0c040">Lucky Jet</text>
+<text x="789" y="440" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0">Spribe</text>
+<rect x="850" y="354" width="102" height="86" rx="10" fill="#151928"/>
+<rect x="850" y="354" width="102" height="44" rx="10" fill="#1a0828"/>
+<text x="901" y="382" text-anchor="middle" font-size="24">🎰</text>
+<text x="901" y="426" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#f0c040">Слоты</text>
+<text x="901" y="440" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0">5000+</text>
+<!-- Bonus banner -->
+<rect x="738" y="452" width="224" height="56" rx="10" fill="#201800"/>
+<rect x="738" y="452" width="4" height="56" rx="2" fill="#f0c040"/>
+<text x="754" y="474" font-family="Arial,sans-serif" font-size="11" fill="#f0c040" font-weight="700">Бонус для Mines</text>
+<text x="754" y="494" font-family="Arial Black,sans-serif" font-size="15" fill="#ffffff">до 25 000 ₽</text>
+<!-- Bottom nav -->
+<rect x="726" y="532" width="248" height="52" fill="#151928"/>
+<line x1="726" y1="532" x2="974" y2="532" stroke="#2a3050" stroke-width="1"/>
+<text x="758" y="564" text-anchor="middle" font-size="18">🏠</text>
+<text x="804" y="564" text-anchor="middle" font-size="18">💣</text>
+<text x="850" y="564" text-anchor="middle" font-size="18">✈</text>
+<text x="896" y="564" text-anchor="middle" font-size="18">🎁</text>
+<text x="942" y="564" text-anchor="middle" font-size="18">👤</text>
+<rect x="810" y="576" width="80" height="4" rx="2" fill="#3a4060"/>
+</svg>
+</div>
+</div></div></section>
+
+<!-- PRODUCTS -->
+<section class="productos"><div class="container"><div class="section-head"><h2>Другие разделы Mostbet</h2><p>Перейдите в раздел, соответствующий вашему запросу: приложение, казино, спорт, бонусы, аккаунт, поддержка или быстрые игры.</p></div>
+<div class="prod-grid">
+<a class="prod-card" href="../slots/"><div class="icon">🎲</div><span class="title">Слоты</span></a>
+<a class="prod-card" href="../live-casino/"><div class="icon">♠</div><span class="title">Лайв-казино</span></a>
+<a class="prod-card" href="../sports-betting/"><div class="icon">⚽</div><span class="title">Ставки на спорт</span></a>
+<a class="prod-card" href="../aviator/"><div class="icon">✈</div><span class="title">Авиатор</span></a>
+<a class="prod-card" href="../lucky-jet/"><div class="icon">🚀</div><span class="title">Lucky Jet</span></a>
+<a class="prod-card" href="../promotions/"><div class="icon">🎁</div><span class="title">Акции</span></a>
+</div></div></section>
+
+<!-- FAQ -->
+<section class="faq"><div class="container"><div class="section-head"><h2>Часто задаваемые вопросы</h2></div>
+<div class="faq-list">
+<details class="faq-item" open=""><summary>Отвечает ли страница на запрос mostbet mines?</summary><p>Да. Контент ориентирован на этот запрос и связывает его с Mostbet Россия, Mostbet RU, приложением, бонусами или поддержкой там, где это уместно.</p></details>
+<details class="faq-item"><summary>Заменяет ли она официальные условия?</summary><p>Нет. Это редакционное руководство; актуальные условия необходимо проверять на платформе перед принятием бонусов или размещением ставок.</p></details>
+<details class="faq-item"><summary>Касается ли она мобильного использования?</summary><p>Да, там, где это уместно, упоминаются Mostbet app, мобильная версия, APK, iOS или доступ через мобильный браузер.</p></details>
+<details class="faq-item"><summary>Что проверить перед игрой на реальные деньги?</summary><p>Домен, аккаунт, способы оплаты, правила игры, требования к бонусам и персональные лимиты.</p></details>
+</div></div></section>
+
+</main>
+<footer>
+<div class="container">
+<div class="foot-grid">
+<div>
+<div class="foot-logo">
+<svg viewBox="0 0 250 56" style="height:40px;width:auto" xmlns="http://www.w3.org/2000/svg">
+<rect width="250" height="56" rx="8" fill="#1e2438"/>
+<text x="14" y="38" font-family="Arial Black,Impact,sans-serif" font-size="30" font-weight="900"><tspan fill="#f0c040">MOST</tspan><tspan fill="#e8eaf0">BET</tspan></text>
+<text x="14" y="52" font-family="Arial,sans-serif" font-size="10" fill="#7a86a0" letter-spacing="3">РОССИЯ</text>
+</svg>
+</div>
+<p style="font-size:14px">Редакционное руководство на русском языке для России по темам: Mostbet, Mostbet RU, онлайн-казино, мобильное приложение, ставки на спорт, акции, промокоды, регистрация, вход и поддержка.</p>
+<p class="foot-disclaimer">Контент предназначен для пользователей 18 лет и старше. Перед совершением ставок изучите требования, лимиты, условия бонусов, каналы поддержки и инструменты ответственной игры.</p>
+</div>
+<div><h2 class="foot-h">Игры</h2><ul>
+<li><a href="../casino/">Mostbet казино</a></li>
+<li><a href="../slots/">Слоты</a></li>
+<li><a href="../live-casino/">Лайв-казино</a></li>
+<li><a href="../aviator/">Авиатор</a></li>
+</ul></div>
+<div><h2 class="foot-h">Доступ</h2><ul>
+<li><a href="../registration/">Регистрация Mostbet</a></li>
+<li><a href="../login/">Вход Mostbet</a></li>
+<li><a href="../app/">Приложение Mostbet</a></li>
+<li><a href="../is-it-safe/">Безопасно ли?</a></li>
+</ul></div>
+<div><h2 class="foot-h">Акции</h2><ul>
+<li><a href="../promotions/">Акции</a></li>
+<li><a href="../promo-code/">Промокод Mostbet</a></li>
+<li><a href="../welcome-bonus/">Приветственный бонус</a></li>
+<li><a href="../support/">Поддержка Mostbet RU</a></li>
+</ul></div>
+</div>
+<div class="foot-bottom"><span>&#169; 2026 · Редакционное руководство Mostbet Россия</span><span>18+ · ответственная информация</span></div>
+</div>
+</footer>
+</body>
+</html>
